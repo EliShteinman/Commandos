@@ -27,7 +27,7 @@ public class Commando
         Console.WriteLine($"is {status}");
     }
 
-    public void Attack()
+    public virtual void Attack()
     {
         Console.WriteLine($"is attacking");  
     }

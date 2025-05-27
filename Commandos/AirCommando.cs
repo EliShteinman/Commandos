@@ -12,4 +12,9 @@ public class AirCommando : Commando
         this.status = "Can parachute";
         Console.WriteLine($"is {status}");
     }
+
+    public override void Attack()
+    {
+        Console.WriteLine("Air commando soldier attacks!");
+    }
 }
