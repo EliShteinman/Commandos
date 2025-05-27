@@ -2,29 +2,29 @@ namespace Commandos;
 
 public class Commando
 {
-    protected string name;
-    protected string codeName { get; set; }
-    protected string[] gear;
-    protected string status;
+    protected string Name { get; set; }
+    public string CodeName { get; protected set; }
+    protected string[] Gear { get; set; }
+    protected string Status { get; set; }
     
     public Commando(string name, string codeName)
     {
-        this.name = name;
-        this.codeName = codeName;
-        this.gear = new string[5];
-        status = "Standing";
+        Name = name;
+        CodeName = codeName;
+        Gear = new string[5];
+        Status = "Standing";
     }
 
     public void Walk()
     {
-        status = "Walking";
-        Console.WriteLine($"is {status}");
+        Status = "Walking";
+        Console.WriteLine($"is {Status}");
     }
 
     public void Hide()
     {
-        status = "Hiding";
-        Console.WriteLine($"is {status}");
+        Status = "Hiding";
+        Console.WriteLine($"is {Status}");
     }
 
     public virtual void Attack()
@@ -37,9 +37,9 @@ public class Commando
         switch (commanderRank.ToUpper())
         {
             case "GENERAL":
-                return name;
+                return Name;
             case "COLONEL":
-                return codeName;
+                return CodeName;
             default:
                 return "Your level is too low to receive the information.";
         }

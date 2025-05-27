@@ -9,8 +9,8 @@ public class AirCommando : Commando
     
     public void Parachute()
     {
-        this.status = "Can parachute";
-        Console.WriteLine($"is {status}");
+        this.Status = "Can parachute";
+        Console.WriteLine($"is {Status}");
     }
 
     public override void Attack()

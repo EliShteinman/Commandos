@@ -8,8 +8,8 @@ public class SeaCommando : Commando
     }
     public void Swim()
     {
-        this.status = "Can swim";
-        Console.WriteLine($"is {status}");
+        this.Status = "Can swim";
+        Console.WriteLine($"is {Status}");
     }
 
     public override void Attack()
