@@ -2,10 +2,10 @@ namespace Commandos;
 
 public class Commando
 {
-    private string name;
-    private string codeName { get; set; }
-    private string[] gear;
-    private string status;
+    protected string name;
+    protected string codeName { get; set; }
+    protected string[] gear;
+    protected string status;
     
     public Commando(string name, string codeName)
     {
