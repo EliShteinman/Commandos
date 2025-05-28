@@ -34,14 +34,6 @@ public class Commando
     
     public string SayName(string commanderRank)
     {
-        switch (commanderRank.ToUpper())
-        {
-            case "GENERAL":
-                return Name;
-            case "COLONEL":
-                return CodeName;
-            default:
-                return "Your level is too low to receive the information.";
-        }
+        return ClearanceHandler.GetName(commanderRank, Name, CodeName);
     }
 }
