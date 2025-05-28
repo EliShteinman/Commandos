@@ -4,7 +4,7 @@ public class Commando
 {
     protected string Name { get; set; }
     public string CodeName { get; protected set; }
-    protected string[] Gear { get; set; }
+    public string[] Gear { get; protected set; }
     protected string Status { get; set; }
     
     public Commando(string name, string codeName)
